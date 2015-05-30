@@ -1,0 +1,34 @@
+CREATE TABLE User
+(
+PlayerID INT NOT NULL AUTO_INCREMENT,
+Username VARCHAR(40) NOT NULL,
+Password VARCHAR(20) NOT NULL DEFAULT 'P@ssword1',
+Email VARCHAR(60),
+Status VARCHAR(20) NOT NULL DEFAULT 'Offline',
+Wins INT NOT NULL DEFAULT 0,
+Losses INT NOT NULL DEFAULT 0,
+PRIMARY KEY(PlayerID)
+);
+
+DROP TABLE Player;
+
+ 
+CREATE TABLE Player
+(
+PlayerID INT NOT NULL,
+MapPositionID INT,
+Solved BOOLEAN,
+PRIMARY KEY(PlayerID),
+FOREIGN KEY(PlayerID) REFERENCES User(PlayerID),
+FOREIGN KEY(MapPositionID) REFERENCES MapPosition(MapPositionID)
+);
+
+INSERT INTO User
+(Username, Email)
+VALUES
+('Jnamu', 'beka@hotmail.com');
+
+INSERT INTO User
+(Username, Password, Email)
+VALUES
+('Bubblez', 'Jk2k4K', 'Julie@hotmail.com');

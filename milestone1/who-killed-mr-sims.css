@@ -1,0 +1,31 @@
+/* Buttons Display */
+#buttonsDisplay {
+	position:absolute; 
+	top:460px; 
+	left:600px;
+	width:200px;
+	height:137px;
+	border:3px solid #000000;
+}
+
+#mapButton, #solveButton {
+  font-family: georgia;
+  font-weight: bold;
+  color: #000103 !important;
+  font-size: 15px;
+  text-shadow: 1px 1px 0px #7CACDE;
+  box-shadow: 1px 1px 1px #BEE2F9;
+  padding: 7px 22px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  border: 4px outset #7F8087;
+  background: #B5BBBD;
+  position:relative;
+  left:50px;
+}
+
+#mapButton:hover, #solveButton:hover {
+  color: #000103 !important;
+  background: #CCD0E6;
+}

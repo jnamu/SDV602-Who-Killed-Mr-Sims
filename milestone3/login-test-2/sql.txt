@@ -1,0 +1,18 @@
+CREATE DATABASE users;
+
+CREATE TABLE users
+(
+user_id VARCHAR(20),
+user_name VARCHAR(20),
+user_email VARCHAR(20),
+user_password VARCHAR(20)
+);
+
+USE users;
+
+INSERT INTO
+	users
+VALUES
+	(1, 'john', 'john@g.com', 'hello'),
+	(2, 'kelley', 'kelley@g.com', 'hello'),
+	(3, 'sue', 'sue@g.com', 'hello');

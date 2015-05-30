@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Who Killed Mr Sims</title>
+		<script type="text/javascript" src="class-factory.js"></script>
+		<link rel="stylesheet" type="text/css" href="who-killed-mr-sims.css" />
+	</head>
+	<body>
+		
+		<!-- Map Position -->
+		<div id="mapPosition" style="position:absolute; top:0px; left:0px;">
+			<canvas id="MapPositionCanvas" width="596" height="456" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+		
+		<!-- Suspect List -->
+		<div id="suspectList" style="position:absolute; top:0px; left:600px;">
+			<canvas id="SuspectListCanvas" width="200" height="150" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+
+		<!-- Weapon List -->		
+		<div id="weaponList" style="position:absolute; top:153px; left:600px;">
+			<canvas id="WeaponListCanvas" width="200" height="150" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+
+		<!-- Location List -->		
+		<div id="locationList" style="position:absolute; top:306px; left:600px;">
+			<canvas id="LocationListCanvas" width="200" height="150" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+		
+		<!-- Text Output Display -->		
+		<div id="textOutput" style="position:absolute; top:460px; left:0px;">
+			<canvas id="TextOutputCanvas" width="596" height="100" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+		
+		<!-- Text Input Display -->		
+		<div id="textInput" style="position:absolute; top:563px; left:0px;">
+			<canvas id="TextInputCanvas" width="596" height="34" style="border:3px solid #000000;">
+			</canvas>
+		</div>
+		
+		<!-- Buttons Display -->		
+		<div id="buttonsDisplay"> <!-- style="position:absolute; top:460px; left:600px;" -->
+			<p>
+				<input type="button" id="mapButton"  value="Map" onClick='alert("there you have been alerted")'>
+			</p>
+			<p>
+				<input type="button" id="solveButton" value="Solve" onClick='alert("there you have been alerted")'>
+			</p>
+		</div>
+		
+		<script type="text/javascript" src="who-killed-mr-sims.js"></script>
+	</body>
+</html>
